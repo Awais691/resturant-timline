@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Request a table at Saffron & Sage, a fictional restaurant concept. This frontend demo does not send or confirm reservations.">
+  <meta property="og:title" content="Reservations | Saffron & Sage"><meta property="og:description" content="Set a date for good food and a long evening."><meta property="og:type" content="website">
+  <title>Reservations | Saffron & Sage</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23203d32'/%3E%3Ctext x='20' y='28' text-anchor='middle' font-family='Georgia' font-size='24' fill='%23f8f5ef'%3ES%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="css/styles.css"><script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a><div class="announcement"><p>A note: this reservation form is a frontend-only demonstration</p></div>
+  <header class="site-header"><nav class="shell nav-wrap" aria-label="Main navigation"><a class="brand" href="index.html"><strong>Saffron & Sage</strong><span>Seasonal dining · Lahore</span></a><button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span></button><ul class="nav-links" id="site-navigation"><li><a href="menu.html">Our menu</a></li><li><a href="about.html">Our story</a></li><li><a href="gallery.html">The space</a></li><li><a href="contact.html">Find us</a></li><li><a class="button" href="reservations.html" aria-current="page">Reserve a table</a></li></ul></nav></header>
+  <main id="main">
+    <section class="hero hero--compact"><div class="hero__image"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=2000&amp;q=85" alt="A softly lit dining room set for an evening service" fetchpriority="high"></div><div class="hero__content"><p class="eyebrow">Reservations</p><h1>Let's make an evening of it.</h1><p>Tell us when you'd like to come by. Your details stay in this browser demo; nothing will be sent or booked.</p></div></section>
+    <section class="section"><div class="shell form-layout">
+      <div class="form-panel"><p class="eyebrow">Request a table</p><h2>Choose your evening.</h2>
+        <form data-demo-form="reservation">
+          <div class="form-grid">
+            <div class="field"><label for="reservation-name">Your name</label><input id="reservation-name" name="name" autocomplete="name" required maxlength="80"></div>
+            <div class="field"><label for="reservation-email">Email address</label><input id="reservation-email" name="email" type="email" autocomplete="email" required maxlength="120"></div>
+            <div class="field"><label for="reservation-phone">Phone number</label><input id="reservation-phone" name="phone" type="tel" autocomplete="tel" required minlength="7" maxlength="24"></div>
+            <div class="field"><label for="reservation-guests">Number of guests</label><select id="reservation-guests" name="guests" required><option value="">Select guests</option><option>1 guest</option><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6 guests</option><option>7+ guests</option></select></div>
+            <div class="field"><label for="reservation-date">Preferred date</label><input id="reservation-date" name="date" type="date" required></div>
+            <div class="field"><label for="reservation-time">Preferred time</label><select id="reservation-time" name="time" required><option value="">Select a time</option><option>12:00</option><option>13:00</option><option>14:00</option><option>18:00</option><option>19:00</option><option>20:00</option><option>21:00</option></select></div>
+            <div class="field field--wide"><label for="reservation-notes">Special requests <span>(optional)</span></label><textarea id="reservation-notes" name="notes" maxlength="500" placeholder="Dietary needs, a celebration, or anything else we should know"></textarea></div>
+          </div>
+          <p class="form-note">This is a frontend-only demo. Submitting will not send your information or confirm a reservation. Please call the example number on our contact page to arrange a visit.</p>
+          <button class="button" type="submit">Review request <span aria-hidden="true">↗</span></button>
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <aside class="detail-list" aria-label="Reservation information">
+        <div><p class="eyebrow">When to visit</p><h3>Opening hours</h3><dl class="hours"><div><dt>Mon–Thu</dt><dd>12:00–22:00</dd></div><div><dt>Fri–Sun</dt><dd>12:00–23:00</dd></div></dl></div>
+        <div><p class="eyebrow">A little help</p><h3>For larger tables</h3><p>For groups of eight or more, please contact our team directly. We can plan a comfortable table and talk through the menu.</p></div>
+        <div><p class="eyebrow">Contact</p><h3>We’re happy to help.</h3><p><a href="tel:+92425550148">+92 42 5550 0148</a><br><a href="mailto:hello@saffronandsage.example">hello@saffronandsage.example</a></p><p><small>Illustrative contact details for this fictional restaurant concept.</small></p></div>
+      </aside>
+    </div></section>
+    <section class="section section--forest"><div class="shell cta-band"><h2>Take a peek at the menu first.</h2><a class="button button--light" href="menu.html">Explore the menu <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-grid"><div><a class="brand" href="index.html"><strong>Saffron & Sage</strong><span>Seasonal dining · Lahore</span></a><p style="margin-top:1.2rem">A fictional restaurant concept celebrating thoughtful food and generous company.</p></div><div><h2>Explore</h2><div class="footer-links"><a href="menu.html">Our menu</a><a href="about.html">Our story</a><a href="gallery.html">The space</a><a href="reservations.html">Reservations</a></div></div><div><h2>Visit</h2><div class="footer-links"><a href="contact.html">Garden Lane, Lahore</a><a href="tel:+92425550148">+92 42 5550 0148</a><a href="mailto:hello@saffronandsage.example">Email the restaurant</a></div></div><div><h2>Follow along</h2><div class="footer-links"><a href="https://www.instagram.com/">Instagram</a><a href="https://www.facebook.com/">Facebook</a></div></div></div><div class="shell footer-bottom"><p>© 2026 Saffron & Sage · Fictional concept website</p><p>Contact details and location are illustrative.</p></div></footer>
+</body>
+</html>
